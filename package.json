@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=\"Mobile Chrome\"",
+    "test:all:desktop": "playwright test tests/desktop/",
+    "test:all:mobile": "playwright test tests/mobile/"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  }
+}
